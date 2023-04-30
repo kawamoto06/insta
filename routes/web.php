@@ -22,3 +22,7 @@ Route::post('/post', 'App\Http\Controllers\PostController@store')->name('post.st
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
