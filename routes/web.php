@@ -21,8 +21,4 @@ Route::post('/post', 'App\Http\Controllers\PostController@store')->name('post.st
 
 Auth::routes();
 
-<<<<<<< Updated upstream
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
-=======
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
->>>>>>> Stashed changes
