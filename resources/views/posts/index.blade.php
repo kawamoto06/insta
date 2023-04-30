@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="{{ asset('example.css') }}">
   <title>サンプルのサイト</title>
 </head>
 <body>
