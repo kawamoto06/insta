@@ -29,11 +29,13 @@
 
 @foreach ($posts as $post)
     <div class="post">
+        <div class="num">
+            <div>{{ $post->id }}:</div>
+            <div class="user">{{ $post->user->name }}</div>
+        </div>
         <p class="content">{{ $post->content }}</p>
-        <p class="user">{{ $post->user->name }}</p>
+        
     </div>
 @endforeach
 </body>
 </html>
-
-
