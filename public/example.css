@@ -1,16 +1,4 @@
-* {
-  margin:0; padding:0;
-}
-header {
-  width: 100%;
-  padding: 15px 0;
-  margin: 0 auto;
-  text-align: center;
-  background-color:aliceblue
-}
-header .headline{
-  font-size: 32px;
-}
+
 .nav-list {
   text-align: center;
   padding: 10px 0;
