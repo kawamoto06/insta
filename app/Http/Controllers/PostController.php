@@ -53,9 +53,7 @@ class PostController extends Controller
             return redirect()->route('login');
         }
 
-        $request->validate([
-            'content' => 'required|max:255',
-        ]);
+        
     }
 
     /**
@@ -88,5 +86,9 @@ class PostController extends Controller
     public function destroy(Post $post)
     {
         //
+    }
+    public function test()
+    {
+        return view('posts.test');
     }
 }

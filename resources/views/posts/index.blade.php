@@ -18,6 +18,7 @@
       <a href="{{ route('register') }}">新規登録</a>
       @endif
   </li>
+  <li class="nav-list-item"><a href="{{ route('test') }}">ポートフォリオ</a></li>
 </ul>
 @if ($user)
     <p class="hello">こんにちは、{{ $user->name }}さん！</p>

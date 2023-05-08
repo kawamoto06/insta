@@ -20,12 +20,25 @@
   </li>
 </ul>
 
-<form action="{{ route('post.store') }}" method="POST">
+<form action="{{ route('post.store') }}" method="POST" enctype="multipart/form-data'>
     @csrf
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
     <div>
         <textarea name="content"></textarea>
     </div>
     <div>
-        <button type="submit">Post</button>
+      <input type="file" name="thumbnail" />
     </div>
+    <div>
+        <button type="submit">登録</button>
+    </div>
+    {{ csrf_field() }}
 </form>
